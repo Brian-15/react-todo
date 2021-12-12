@@ -18,7 +18,12 @@ const NewTodoForm = ({ addTodo }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor='text'>Text
-                <input onChange={handleChange} name='text' value={textData} />
+                <input
+                    onChange={handleChange}
+                    name='text'
+                    value={textData}
+                    data-testid='text-input'
+                />
             </label>
             <button>Add Task</button>
         </form>

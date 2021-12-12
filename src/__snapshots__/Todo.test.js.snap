@@ -2,11 +2,15 @@
 
 exports[`Todo component snapshot test 1`] = `
 <DocumentFragment>
-  <li>
+  <li
+    data-testid="task"
+  >
     <p>
       test text
     </p>
-    <button>
+    <button
+      data-testid="remove-btn"
+    >
       X
     </button>
   </li>

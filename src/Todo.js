@@ -1,8 +1,8 @@
 const Todo = ({ id, text, removeTask }) => {
     return (
-        <li id={ id }>
+        <li id={ id } key={id} data-testid='task'>
             <p>{ text }</p>
-            <button onClick={ removeTask }>X</button>
+            <button onClick={ removeTask } data-testid='remove-btn'>X</button>
         </li>
     )
 };
